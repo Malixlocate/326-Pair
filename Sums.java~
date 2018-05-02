@@ -1,0 +1,20 @@
+public class Sums {
+    private static float n = 5000f;
+    private static float result = 0f;
+
+    public static void main(String[] args) {
+        if (args[0] != null) {
+            n = (float) args[0];
+        }
+        result = calculate();
+        System.out.println(result);
+    }
+
+    public static float calculate() {
+        float result = 0f;
+        for (int i = n; i > 0; i--) {
+            result += 1 / n
+        }
+        return result;
+    }
+}
