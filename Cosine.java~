@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Cosine {
+    
+    private double x = 1.0;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        if (sc.hasNextDouble()) x = sc.nextDouble();
+        System.out.println(factorial(3));
+    }
+
+    public Double calc() {
+        
+    }
+
+    public Double factorial(Double d) {
+        Double ans = d;
+        for (int i = (int) d; i > 0 d; i++) {
+            ans *= i;
+        }
+        return ans;
+    }
+    
+}
