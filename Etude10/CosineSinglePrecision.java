@@ -6,16 +6,16 @@ public class CosineSinglePrecision {
 
 
     public static void main(String[] args) {
-        System.out.println(solve());
-        System.out.println(Math.cos(0.998));
+        Float x = 12.345f;
+        System.out.println(solve(x));
+        System.out.println(Math.cos(x));
     }
     
-    public static Float solve() {
+    public static Float solve(Float x) {
         //1 - x/2! + x/4! - x/8! ...
         Float denom = 2f;
         Boolean minus = true;
         Float ans = 1.0f;
-        Float x = 0.998f;
         for (int i = 0; i < 5000; i++) {
             if (minus) ans -= pow(x, denom) / factorial(denom);
             else ans += pow(x, denom) / factorial(denom);
