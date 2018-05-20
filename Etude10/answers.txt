@@ -1,5 +1,3 @@
-Harmonic
-
 1. 9.094509
    9.094514
 
@@ -7,39 +5,8 @@ Harmonic
    9.094508852984404
    9.0945088529844369672612455333934393917829878113038
 
-3. Answer question
+3. 
 
-Cosine
-
-1. 
-   0.998: Our result (single):          0.5412217
-   0.998: Math lib (single):            0.5419841444722006
-   0.998: Our result (double):          0.5419841661115429
-   0.998: Math lib result (double):     0.5419841661115429
-
-   0.995: Our result (single):          0.54260075
-   0.995: Math lib result (single):     0.5445028854972882
-   0.995: Our result (double):          0.5445028894968027
-   0.995: Math lib result (double):     0.5445028894968026
-
-   0.994: Our Result (single):          0.5430605
-   0.994: Math lib result (single):     0.5453413612831675
-   0.994: Our result (double):          0.5453413760717568
-   0.994: Math lib result (double):     0.5453413760717568
-
-
-   12.345: Our result (single):         -4.674968
-   12.345: Math lib result (single):    0.9755974827475552
-   12.345: Our result (double):         NaN
-   12.345: Math lib result (double):    0.9755974241168766
-
-
-3. As we get the same result with our double precision as the math library, we believe they are equally accurate. We believe the math function also uses double-precision numbers and is therefor at the same level of accuracy.
-
-Identity
-
-1. Identity for 133.0 and 432.0 is false (single)
-   Identity for 133.0 and 43.0 is true (double)
 
 
 
