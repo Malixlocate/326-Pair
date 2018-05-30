@@ -11,9 +11,8 @@
 \begin{document}
 \maketitle
 
-\selection{Brief:}
-We’re observing the way the computer store different number types in memory, and how this may or may not cause effects in the calculated results.
-
+\section*{Brief:}
+We’re observing the way a computer stores different number types in memory, and how this may or may not cause effects in the calculated results.\\
 Using Java, we’ve conducted the following experiments(better words needed):
 
 \begin{itemize}
@@ -23,11 +22,52 @@ Using Java, we’ve conducted the following experiments(better words needed):
   \item Created a method calculating a true identity for different values, using single precision floating point values
 \end{itemize}
 
-Editing short documents online is free. View premium plans and pricing at
-\url{https://latexbase.com/static/pricing} to enjoy unlimited document editing
-(online or offline) and a variety of other useful features. Thanks for trying
-out our service and don't hesitate to get in touch at
-\href{mailto:support@latexbase.com}{support@latexbase.com}!
+\section*{Harmonic Series:}
+\begin{itemize} 
+\subsection*{Do you get the same answer in both calucaltions?}
+\end{itemize}
+\item No, the answers for both calucaltions are different. The results are:
+\begin{itemize}
+\item $n$ to 1: 9.094509
+\item 1 to $n$: 9.094514
+\end{itemize}
+\item Comparing these two answers to the same problem calculated using a double,\\  $n$ to 1 yeilds the most accurate answer, because the calucalations are performed with smaller numbers earlier on. Becuase float arithmatics scaling issue, adding a small number to a small number provides greater accuracy than adding a small number to a large number. Each floating point number has an exponent that will deterime the overall scale of the representation, therefore if you calcualte using smaller numbers to begin with, it allows accuracy to accumulate as the smaller numbers are added together, later on forming a bigger number, where as if you being with a bigger number, then when smaller numbers are added to it, the smaller numbers essetially get consumed by the bigger number as the scale of the smaller number is different and does not get used, therefore accuracy is lost.
+\subsection*{Are the answers the same as the previous question when performed with double precision?}
+\item results for the same calucaltion with doubles:
+\begin{itemize}
+\item reference value 9.0945088529844369672612455333934393917829878113038
+\item $n$ to 1: 9.09450885298443
+\item $1$ to $n$: 9.094508852984404
+\end{itemize}
+\begin{itemize}
+\subsection*{Which calculation is more accurate?}
+\end{itemize}
+\begin{itemize}
+\subsection*{Is this always the case?}
+\end{itemize} 
+
+\section*{Cosine Series:}
+
+\begin{itemize}
+\subsection*{Is there a difference when storing partial sums as floats and doubles?}
+\subsection*{Is the accuracy of your results the same for each value of $x$?}
+
+\end{itemize}
+
+\section*{Cosine Series 2:}
+\begin{itemize} 
+\subsection*{Do you get the same results using floats and doubles?}
+\subsection*{How do they compare to the results obtained in Part 2?}
+\subsection*{Which of these calculations do you think is more accurate, and why?}
+\end{itemize} 
+
+\section*{True identity:}
+\begin{itemize}
+\subsection*{Is the identity always true?}
+\subsection*{How confident are you in your calculated value of $f$?}
+\subsection*{What implications does this have for numerical calculations?}
+\end{itemize}
 
 \end{document}
+
 
