@@ -23,10 +23,10 @@ Using Java, we’ve conducted the following experiments(better words needed):
 \end{itemize}
 
 \section*{Harmonic Series:}
-\begin{itemize} 
+\begin{itemize}
 \subsection*{Do you get the same answer in both calucaltions?}
 \end{itemize}
-\item No, the answers for both calucaltions are different. The results are:
+\item No, the answers for both calculations are different. The results are:
 \begin{itemize}
 \item $n$ to 1: 9.094509
 \item 1 to $n$: 9.094514
@@ -35,39 +35,163 @@ Using Java, we’ve conducted the following experiments(better words needed):
 \subsection*{Are the answers the same as the previous question when performed with double precision?}
 \item results for the same calucaltion with doubles:
 \begin{itemize}
-\item reference value 9.0945088529844369672612455333934393917829878113038
-\item $n$ to 1: 9.09450885298443
-\item $1$ to $n$: 9.094508852984404
+\item reference value:  9.0945088529844369672612455333934393917829878113038
+\item $n$ to 1:\ \ \ \ \ \ \ \ \ \ \ \ 9.09450885298443
+\item $1$ to $n$:\ \ \ \ \ \ \ \ \ \ \ \ 9.094508852984404
 \end{itemize}
+\item As you can see in the results above, the results differ slightly, and once again calculating from $n$ to 1 is more accurate than calculating from 1 to $n$.
+\item The dobuble precision results are the same as the single precision results up until the last digit for $n$ to 1, and the last two digits for 1 to $n$, where it then continues with more accuracy.
 \begin{itemize}
 \subsection*{Which calculation is more accurate?}
 \end{itemize}
+\item Calculating from $n$ to 1 is more accurate using doubles
 \begin{itemize}
-\subsection*{Is this always the case?}
-\end{itemize} 
+\break
+\subsection*{Different partial sums}
+\item Sum = 15000
+\begin{itemize}
+
+\item 1 to $n$ float: 10.193057
+\item $n$ to 1 float: 10.19306
+\\
+\item 1 to $n$ double: 10.193054477948825
+\item $n$ to 1 double: 10.193054477948827
+\\
+\item Dcode ref value: 10.193054477948842941784063040396734800236568344033
+\\
+\end{itemize}
+\item Sum = 12500
+\begin{itemize}
+\item 1 to $n$ float: 10.010745
+\item $n$ to 1 float: 10.010745
+\\
+\item 1 to $n$ double: 10.010739587658568
+\item $n$ to 1 double: 10.010739587658591
+\\
+\item Dcode ref value: 10.010739587658592019452772998089439803557704707357
+\end{itemize}
+\\
+\item Sum = 10000
+\begin{itemize}
+\item 1 to $n$ float: 9.787613
+\item $n$ to 1 float: 9.787604
+\\
+\item 1 to $n$ double: 9.787606036044348
+\item $n$ to 1 double: 9.787606036044386
+\\
+\item Dcode ref value: 9.7876060360443822641784779048516053348592629455777
+\end{itemize}
+\break
+\item Sum = 7500
+\begin{itemize}
+\item 1 to $n$ float: 9.499948
+\item $n$ to 1 float: 9.499937
+\\
+\item 1 to $n$ double: 9.499940629611078
+\item $n$ to 1 double: 9.49994062961112
+\\
+\item Dcode ref value: 9.4999406296111198570581889216820428716977107675488
+\end{itemize}
+\item Sum = 3592
+\begin{itemize}
+\item 1 to $n$ float: 8.763824
+\item $n$ to 1 float: 8.763821
+\\
+\item 1 to $n$ double: 8.763819286083145
+\item $n$ to 1 double: 8.763819286083168
+\\
+\item Dcode ref value: 8.7638192860831712825591880652924647590863952587675
+\end{itemize}
+\\
+\item Sum = 2500
+\begin{itemize}
+\item 1 to $n$ float: 8.401466
+\item $n$ to 1 float: 8.401463
+\\
+\item 1 to $n$ double: 8.401461662424492
+\item $n$ to 1 double: 8.401461662424492
+\\
+\item Dcode ref value: 8.4014616624244918578439974119379828229138880307353
+\end{itemize}
+\break
+\item Sum = 1250
+\begin{itemize}
+\item 1 to $n$ float: 7.708519
+\item $n$ to 1 float: 7.7085156
+\\
+\item 1 to $n$ double: 7.708514441864543
+\item $n$ to 1 double: 7.708514441864544
+\\
+\item Dcode ref value: 7.7085144418645497484257412911761254421934370247423
+\\
+\end{itemize}
+\item Sum = 625
+\begin{itemize}
+\item 1 to $n$ float: 7.0157685
+\item $n$ to 1 float: 7.0157666
+\\
+\item 1 to $n$ double: 7.0157671013046565
+\item $n$ to 1 double: 7.015767101304654
+\\
+\item Dcode ref value: 7.0157671013046556389429733479750367301399216499417
+\end{itemize}
+\item Sum = 312
+\begin{itemize}
+\item 1 to $n$ float: 6.3218217
+\item $n$ to 1 float: 6.3218203
+\\
+\item 1 to $n$ double: 6.321820560743888
+\item $n$ to 1 double: 6.321820560743889
+\\
+\item Dcode ref value: 6.3218205607438911337199995933414373621734208530480
+\end{itemize}
+\end{itemize}
+\item Calculating from a smaller number to a bigger number (backwards in this case) is more accurate. Sometimes you may end up with the same accuracy, once a convergence point has been reached
+
 
 \section*{Cosine Series:}
 
 \begin{itemize}
 \subsection*{Is there a difference when storing partial sums as floats and doubles?}
+
 \subsection*{Is the accuracy of your results the same for each value of $x$?}
 
 \end{itemize}
 
 \section*{Cosine Series 2:}
-\begin{itemize} 
+\begin{itemize}
 \subsection*{Do you get the same results using floats and doubles?}
 \subsection*{How do they compare to the results obtained in Part 2?}
 \subsection*{Which of these calculations do you think is more accurate, and why?}
-\end{itemize} 
+\end{itemize}
 
 \section*{True identity:}
 \begin{itemize}
 \subsection*{Is the identity always true?}
-\subsection*{How confident are you in your calculated value of $f$?}
-\subsection*{What implications does this have for numerical calculations?}
 \end{itemize}
+ No, the identity is sometimes false such as in the following cases that were found:\
+\begin{itemize}
+\begin{itemize}
+\item $f$ = 0.01 \\ $g$ = 2.5541441
+\\
+\item $f$ = 0.101010 \\ $g$ = 0.333333
+\\
+\item $f$ = 5.3141234123 \\ $g$ = 0.6424563434
+\\
+\item $f$ = 134.21353 \\ $g$ = 12.543163
+\\
+\item $f$ = 55.43214 \\ $g$ = 15.123413
+\end{itemize}
+\end{itemize}
+\\
+\\
+\subsection*{How confident are you in your calculated value of $f$?}
+\item Because of floating point rounding error, we have little confidence in our computer calculated values of f. However if the algebra was being calculated on paper then the most utmost confidence would be endorsed instead. 
+\subsection*{What implications does this have for numerical calculations?}
+\item This impacts numerical calculations computed becuase computers store fractions as binary decimals which will always eventually result in a loss of accuracy unless memory is unlimited.
+
 
 \end{document}
 
 
+           
