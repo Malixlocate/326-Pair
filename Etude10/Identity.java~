@@ -1,0 +1,18 @@
+public class Identity {
+
+    public static void main(String[] args) {
+        float f = 5f;
+        float g = 10f;
+        if (args.length == 2) {
+            f = Float.parseFloat(args[0]);
+            g = Float.parseFloat(args[1]);
+        }
+        System.out.println("Identity for " + f + " and " + g
+                           + " is " + calcIdentity(f,g)); 
+    }
+
+    public static Boolean calcIdentity(float f, float g) {
+        return f == (f/g - f * g) * g + f * g * g;
+    }
+    
+}
